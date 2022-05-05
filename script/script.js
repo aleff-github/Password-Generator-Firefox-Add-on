@@ -59,3 +59,11 @@ function generatePassword() {
 }
 
 document.getElementById("generate-password").addEventListener("click", generatePassword);
+
+function donate() {
+    browser.tabs.create({
+        "url": "https://github.com/sponsors/NoNameoN-A"
+    });
+}
+
+document.getElementById("donate").addEventListener("click", donate);
