@@ -7,10 +7,10 @@ browser.menus.create({
 
 browser.menus.onClicked.addListener((info, tab) => {
     if (info.editable) {
-        
+
         payload = `browser.menus.getTargetElement(${info.targetElementId}).value = `
         payload += "\"" + generateRandomStrongPassword() + "\";"
-        
+
         browser.tabs.executeScript(tab.id, {
             frameId: info.frameId,
             code: payload
@@ -28,6 +28,20 @@ function generateRandomStrongPassword() {
         Array.from(crypto.getRandomValues(new Uint32Array(length)))
             .map((x) => wishlist[x % wishlist.length])
             .join('');
-    
-    return generatePassword();
+
+    specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+    numbersChars = /[0123456789]/;
+    lowChars = /[abcdefghijklmnopqrstuvwxyz]/;
+    uppChars = /[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/;
+    while (true) {
+        password = generatePassword();
+
+        if (specialChars.test(password) &&
+            numbersChars.test(password) &&
+            lowChars.test(password) &&
+            uppChars.test(password)) {
+            break;
+        }
+    }
+    return password;
 }
