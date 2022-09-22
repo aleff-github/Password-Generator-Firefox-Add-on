@@ -2,39 +2,31 @@
     "browser_action": {
         "browser_style": true,
         "default_title": "Password Generator",
-        "default_popup": "index.html",
+        "default_popup": "popup.html",
         "default_icon": {
-            "16": "icons/logo-16.png",
-            "24": "icons/logo-24.png",
-            "32": "icons/logo-32.png",
-            "64": "icons/logo-64.png",
-            "128": "icons/logo-128.png",
-            "256": "icons/logo-256.png",
-            "512": "icons/logo-512.png"
+            "16": "icon/icon-16.png",
+            "19": "icon/icon-19.png",
+            "32": "icon/icon-32.png",
+            "38": "icon/icon-38.png",
+            "48": "icon/icon-48.png",
+            "128": "icon/icon-128.png"
         }
     },
     "manifest_version": 2,
     "name": "Password Generator",
-    "version": "1.0.0",
+    "version": "1.2",
     "description": "Generate random passwords",
-    "permissions": [
-        "*://developer.mozilla.org/*",
-        "activeTab",
-        "clipboardWrite",
-        "menus"
-    ],
     "background": {
         "scripts": [
-            "script/background.js"
+            "js/background.js"
         ]
     },
     "icons": {
-        "16": "icons/logo-16.png",
-        "24": "icons/logo-24.png",
-        "32": "icons/logo-32.png",
-        "64": "icons/logo-64.png",
-        "128": "icons/logo-128.png",
-        "256": "icons/logo-256.png",
-        "512": "icons/logo-512.png"
+        "16": "icon/icon-16.png",
+        "19": "icon/icon-19.png",
+        "32": "icon/icon-32.png",
+        "38": "icon/icon-38.png",
+        "48": "icon/icon-48.png",
+        "128": "icon/icon-128.png"
     }
 }

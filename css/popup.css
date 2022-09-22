@@ -1,0 +1,185 @@
+:root {
+    --primary: #5e5df0;
+    --secondary: #4545b5;
+    --little-black: #1C1C1C;
+}
+
+html {
+    text-align: center;
+    font-size: large;
+    margin-right: 10%;
+    width: 100%;
+    background-image: url("../img/bk.png");
+    background-repeat: round;
+}
+
+body, 
+button,
+input{
+    font-family: monospace;
+    font-size: 15px;
+}
+
+
+h1 {
+    color: var(--primary);
+    text-align: center;
+}
+
+h2 {
+    font-size: large;
+    color: #1C1C1C;
+    text-align: center;
+}
+
+h3 {
+    font-size: medium;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+h2,
+h3 {
+    font-style: italic;
+    font-weight: inherit;
+}
+
+hr {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Start Scrollbar */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+/* End Scrollbar */
+
+.grid-container {
+    display: grid;
+    gap: 13px 13px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-item {
+    background: var(--primary);
+    border-radius: 30px;
+    box-shadow: var(--secondary) 0 10px 20px -10px;
+    color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    line-height: 24px;
+    margin-right: 10px;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    width: fit-content;
+    border: 0;
+    height: auto;
+    cursor: pointer; 
+  }
+  .grid-item:hover {
+    /* background-color: #741e39;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 6px; */
+    box-shadow: inset 0 0 20px 20px rgba(255, 255, 255, 0.1);
+  }
+  .clicked{
+    font-size: xx-large;
+    background-color: var(--secondary) !important;
+    display: inline-block;
+    color: white;
+    border-radius: 30px;
+    height: auto;
+    cursor: pointer; 
+  }
+  .left {
+    margin-left: 15%;
+  }
+  .right {
+    margin-right: 15%;
+  }
+.slider {
+    width: 85%;
+}
+.min{
+    float: left;
+    margin-left: 10%;
+    color: gray;
+}
+.max{
+    float: right;
+    margin-right: 10%;
+    color: gray;
+}
+
+.section {
+    margin-top: 20px;
+    text-align: center;
+    font-size: medium;
+}
+
+.elem-with-background {
+    text-align: center;
+    font-size: 100%;
+    height: 40px;
+    width: 80%;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border-width: 0px;
+}
+
+select {
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+
+.form-control {
+    text-align: center;
+    height: 30px;
+    width: 80%;
+    border-radius: 20px;
+    border-color: var(--little-black);
+}
+
+.end {
+    margin-bottom: 30px;
+
+}
+
+.left-20 {
+    margin-left: 20px;
+}
+
+#generate-password{
+    font-size: xx-large;
+    background-color: var(--primary);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Password Generator">
+    <meta name="description" content="Generate all password you want!">
+    <meta name="keywords" content="password, password generator, aleff">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Alessandro Greco aka aleff">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="section">
+            <h1>Password Generator</h1>
+            <h2>Generate all password you want!</h2>
+        </div>
+        <div class="section">
+            <input id="slider" class="slider" type="range" value="16" min="4" max="64" step="1">
+        </div>
+        <div>
+            <span class="min">Min: 4</span>
+            <span class="current left-20">
+                Size:
+                <span id="current-size" class="">16</span>
+            </span>
+            <span class="max">Max: 64</span>
+        </div>
+        <div class="section">
+        <div class="grid-container">
+            <div class="grid-item left clicked" id="upp">
+                <p>AB.Z</p>
+            </div>
+            <div class="grid-item right clicked" id="low">                
+                <p>ab..z</p>
+            </div>
+            <div class="grid-item left clicked" id="numbers">
+                <p>01..9</p>
+            </div>
+            <div class="grid-item right clicked" id="symbols">
+                <p>;?/...</p>
+            </div>
+        </div></div>
+        <div class="section">
+            <button class="btn elem-with-background" type="button" id="generate-password">Generate!</button>
+        </div>
+        <div class="section">
+            <input type="text" class="form-control" id="password" name="input-group-2" placeholder="Generate Password!">
+        </div>
+        <hr>
+        <div class="section end">
+            <h3><b>Credits...</b></h3>
+            <p><b>Author</b>: Alessandro Greco</p>
+            <p><b>Website</b>: <a href="https://autistici.org/aleff" target="_blank">autistici.org/aleff</a></p>
+            <p><b>Donate</b>: <a href="https://github.com/sponsors/aleff-github" target="_blank">GitHub Sponsor</a></p>
+        </div>
+    </div>
+</body>
+
+<script src="js/popup.js"></script>
+
+</html>
