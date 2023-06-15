@@ -1,7 +1,5 @@
 # Password Generator Firefox/Add-on
 
-![](https://img.shields.io/badge/unsupported-!-3C3C3C)
-
 Firefox/Add-on: [Password Generator](https://addons.mozilla.org/it/firefox/addon/aleff-password-generator/)
 
 Icons: [Shield icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/shield)
