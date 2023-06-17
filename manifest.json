@@ -1,7 +1,7 @@
 {
     "browser_action": {
         "browser_style": true,
-        "default_title": "Password Generator",
+        "default_title": "Password Generator by Aleff",
         "default_popup": "popup.html",
         "default_icon": {
             "16": "icon/icon-16.png",
@@ -9,12 +9,14 @@
             "32": "icon/icon-32.png",
             "38": "icon/icon-38.png",
             "48": "icon/icon-48.png",
-            "128": "icon/icon-128.png"
+            "64": "icon/icon-64.png",
+            "128": "icon/icon-128.png",
+            "256": "icon/icon-256.png"
         }
     },
     "manifest_version": 2,
-    "name": "Password Generator",
-    "version": "1.2.1",
+    "name": "Password Generator by Aleff",
+    "version": "1.2.2",
     "description": "Generate random passwords",
     "background": {
         "scripts": [
@@ -27,6 +29,8 @@
         "32": "icon/icon-32.png",
         "38": "icon/icon-38.png",
         "48": "icon/icon-48.png",
-        "128": "icon/icon-128.png"
+	"64": "icon/icon-64.png",
+        "128": "icon/icon-128.png",
+	"256": "icon/icon-256.png"
     }
 }
