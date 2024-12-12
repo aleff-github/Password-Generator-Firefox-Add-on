@@ -1,4 +1,3 @@
-
 function generateRandomStrongPassword() {
 
     let size = document.getElementById('slider').value;

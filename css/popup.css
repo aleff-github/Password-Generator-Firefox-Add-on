@@ -11,6 +11,7 @@ html {
     width: 100%;
     background-image: url("../img/bk.png");
     background-repeat: round;
+    display: inline-flex
 }
 
 body, 
@@ -80,24 +81,28 @@ hr {
     display: grid;
     gap: 13px 13px;
     grid-template-columns: 1fr 1fr;
+    margin: 5%;
+    margin-right: 25px;
   }
   .grid-item {
-    background: var(--primary);
+    text-align: center;
     border-radius: 30px;
     box-shadow: var(--secondary) 0 10px 20px -10px;
     color: white;
     cursor: pointer;
-    font-family: sans-serif;
-    font-size: xx-large;
-    font-weight: 600;
     line-height: 24px;
-    margin-right: 10px;
     outline: 0 solid transparent;
     padding: 8px 18px;
     width: fit-content;
+    max-width: 90px;
+    min-width: 90px;
     border: 0;
     height: auto;
     cursor: pointer; 
+    
+  }
+  #content {
+    margin-left: 10%;
   }
   .grid-item:hover {
     /* background-color: #741e39;
@@ -115,18 +120,12 @@ hr {
     height: auto;
     cursor: pointer; 
   }
-  .left {
-    margin-left: 15%;
-  }
-  .right {
-    margin-right: 15%;
-  }
 .slider {
     width: 85%;
 }
 .min{
-    float: left;
-    margin-left: 10%;
+    /* float: left; */
+    /* margin-left: 10%; */
     color: gray;
 }
 .max{
@@ -176,7 +175,7 @@ select {
 }
 
 .left-20 {
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 #generate-password{
