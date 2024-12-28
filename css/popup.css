@@ -9,7 +9,6 @@ html {
     font-size: large;
     margin-right: 10%;
     width: 100%;
-    background-image: url("../img/bk.png");
     background-repeat: round;
     display: inline-flex
 }
@@ -85,10 +84,13 @@ hr {
     margin-right: 25px;
   }
   .grid-item {
+    display: inline-block;
+    font-size: xx-large;
+    color: white;
     text-align: center;
     border-radius: 30px;
+    background-color: var(--primary);
     box-shadow: var(--secondary) 0 10px 20px -10px;
-    color: white;
     cursor: pointer;
     line-height: 24px;
     outline: 0 solid transparent;
@@ -105,17 +107,10 @@ hr {
     margin-left: 10%;
   }
   .grid-item:hover {
-    /* background-color: #741e39;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 2px 2px 6px 6px; */
     box-shadow: inset 0 0 20px 20px rgba(255, 255, 255, 0.1);
   }
   .clicked{
-    font-size: xx-large;
-    background-color: var(--secondary) !important;
-    display: inline-block;
-    color: white;
+    background-color: var(--secondary);
     border-radius: 30px;
     height: auto;
     cursor: pointer; 
@@ -172,10 +167,6 @@ select {
 .end {
     margin-bottom: 30px;
 
-}
-
-.left-20 {
-    /* margin-left: 20px; */
 }
 
 #generate-password{

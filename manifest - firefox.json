@@ -1,5 +1,5 @@
 {
-    "action": {
+    "browser_action": {
         "browser_style": true,
         "default_title": "Password Generator by Aleff",
         "default_popup": "popup.html",
@@ -14,12 +14,14 @@
             "256": "icon/icon-256.png"
         }
     },
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Password Generator by Aleff",
-    "version": "1.2.3",
+    "version": "1.2.2",
     "description": "Generate random passwords",
     "background": {
-        "service_worker": "js/background.js"
+        "scripts": [
+            "js/background.js"
+        ]
     },
     "icons": {
         "16": "icon/icon-16.png",
